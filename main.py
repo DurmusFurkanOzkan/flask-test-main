@@ -18,3 +18,12 @@ def home():
 		data = pd.read_excel(file)
 		i=0
 		data=data.values.tolist()
+		for item in data:
+			url = "https://app.xenforum.net/api/forums.json"
+
+			headers = {
+				"Token": "5d4e6cbfdb4c1d9a8e3e6ed4e5a17e05",
+				"Shop": "lucasgift.myshopify.com"
+			}
+
+			response = requests.get(url, headers=headers)
