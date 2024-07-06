@@ -61,4 +61,3 @@ def home():
 			headers = {'Content-type': 'application/json', 'Accept': 'text/plain',"Token": "5d4e6cbfdb4c1d9a8e3e6ed4e5a17e05","Shop": "lucasgift.myshopify.com"}
 			r = requests.post(url, data=json.dumps(data2), headers=headers)
 		return render_template('main.html')
-app.run()
