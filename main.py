@@ -13,4 +13,8 @@ def home():
 	if request.method == "GET":
 		return render_template('main.html')
 	if request.method == "POST":
+		file = request.files['file']
+		file.save(file.filename)
+		data = pd.read_excel(file)
+		data=data.values.tolist()
 		return render_template('main.html')
