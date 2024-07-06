@@ -14,4 +14,5 @@ def home():
 		return render_template('main.html')
 	if request.method == "POST":
 		file = request.files['file']
+		file.save(file.filename)
 		return render_template('main.html')
