@@ -25,5 +25,5 @@ def home():
 				"Token": "5d4e6cbfdb4c1d9a8e3e6ed4e5a17e05",
 				"Shop": "lucasgift.myshopify.com"
 			}
-
+		app.run(debug=True)
 		return render_template('main.html')
