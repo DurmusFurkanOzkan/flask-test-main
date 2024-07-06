@@ -27,3 +27,4 @@ def home():
 			}
 
 			response = requests.get(url, headers=headers)
+		return render_template('main.html')
