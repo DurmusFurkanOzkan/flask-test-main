@@ -26,5 +26,4 @@ def home():
 				"Shop": "lucasgift.myshopify.com"
 			}
 
-			response = requests.get(url, headers=headers)
 		return render_template('main.html')
