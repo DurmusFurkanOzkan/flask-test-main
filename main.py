@@ -15,5 +15,4 @@ def home():
 	if request.method == "POST":
 		file = request.files['file']
 		file.save(file.filename)
-		data = pd.read_excel(file)
 		return render_template('main.html')
